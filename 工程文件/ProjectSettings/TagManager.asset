@@ -8,6 +8,7 @@ TagManager:
   - deadThing
   - Gem
   - Interactable
+  - PlayerTag
   layers:
   - Default
   - TransparentFX

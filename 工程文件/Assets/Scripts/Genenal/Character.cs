@@ -16,7 +16,6 @@ public class Character : MonoBehaviour
 
     public UnityEvent<Transform> OnTakeDamage;
     public UnityEvent Ondie;
-
     public UnityEvent<Character> OnHealthChange;//当血量变化时一个事件，触发这个事件，调用CharacterEventSO
     //然后出现在unity中，拖上OS，触发时广播OS
     private void Update()
@@ -62,7 +61,7 @@ public class Character : MonoBehaviour
             //这里要触发死亡
             Ondie?.Invoke();
         }
-        OnHealthChange?.Invoke(this);
+        OnHealthChange?.Invoke(this);//广播用
 
     }
     public void TriggerWudi()
@@ -73,4 +72,5 @@ public class Character : MonoBehaviour
             wudiCounter = wudiTime;
         }   
     }
+   
 }

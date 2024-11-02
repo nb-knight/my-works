@@ -10,18 +10,29 @@ public class UIManager : MonoBehaviour
     [Header("事件监听")]
     public CharacterEventSO HealthEvent;
 
+    public RecoverHealthSO RecoverHealth;
+
     private void OnEnable()
     {
         //注册事件
         HealthEvent.OnEventRaised += OnHealthEvent;
+        RecoverHealth.HealthHealth += HealthRecoveryEvent;
         //调用CharacterEventSO,里面那个事件，要监听的那个事件
         //+=注册函数事件，来相应你的这次监听
             }
 
+   
     private void OnDisable()
     {
         //取消注册
         HealthEvent.OnEventRaised -= OnHealthEvent;
+        RecoverHealth.HealthHealth -= HealthRecoveryEvent;
+    }
+
+    private void HealthRecoveryEvent(Character character)
+    {
+        character.CurrentHealth = character.MaxHealth;
+        playerSetBar.OnHealthChange(1);
     }
 
     private void OnHealthEvent(Character character)//这里记得改名，不然下面写Character引用的不知道什么东西

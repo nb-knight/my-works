@@ -5522,9 +5522,10 @@ GameObject:
   - component: {fileID: 423226096}
   - component: {fileID: 423226095}
   - component: {fileID: 423226097}
+  - component: {fileID: 423226098}
   m_Layer: 0
   m_Name: house
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5641,6 +5642,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3317528, y: 2.043823}
   m_EdgeRadius: 0
+--- !u!114 &423226098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423226094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b984ee68762f75c46a2bbff6760e6dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recoverHealth: {fileID: 11400000, guid: 66672ce97cbf71046981417572776a2d, type: 2}
 --- !u!1 &446071879
 GameObject:
   m_ObjectHideFlags: 0
@@ -8866,6 +8880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   positionToGo: {x: -9.99, y: -2.01, z: 0}
+  sceneToGo: {fileID: 11400000, guid: 4cebbe7f1686de74788920cde292d4d6, type: 2}
+  eventSO: {fileID: 11400000, guid: c4d17453ea939ab4e89331b9a8bffbfb, type: 2}
 --- !u!1 &1684328886
 GameObject:
   m_ObjectHideFlags: 0

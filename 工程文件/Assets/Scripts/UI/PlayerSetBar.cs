@@ -15,6 +15,10 @@ public class PlayerSetBar : MonoBehaviour
         {
             healthDelayImage.fillAmount-=Time.deltaTime;
         }
+        else
+        {
+            healthDelayImage.fillAmount = healthImage.fillAmount;
+        }
     }
     public void OnHealthChange(float persentage)
     {
