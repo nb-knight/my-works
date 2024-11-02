@@ -2,3 +2,6 @@ Library/
 Other/
 Cache
 *.cache
+.vs/
+.vscode/
+
