@@ -16,6 +16,8 @@ public class GetHealth : MonoBehaviour, Interface
     public void TriggerAction()
     {
         recoverHealth.RaiseEvent(character);
+        if (this.gameObject.layer == 11)
+            Destroy(this.gameObject);
     }
 
 }

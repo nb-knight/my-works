@@ -9,6 +9,7 @@ TagManager:
   - Gem
   - Interactable
   - PlayerTag
+  - YaoShui
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - player
   - enemy
   - Gem
-  - 
+  - YaoShui
   - 
   - 
   - 

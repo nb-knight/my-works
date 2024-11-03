@@ -89,6 +89,7 @@
     <Compile Include="Assets\Scripts\ScriptableObject\CharacterEventSO.cs" />
     <Compile Include="Assets\HurtAnimation.cs" />
     <Compile Include="Assets\Scripts\UI\TextController.cs" />
+    <Compile Include="Assets\Destory.cs" />
     <Compile Include="Assets\AttackFinish.cs" />
   </ItemGroup>
   <ItemGroup>
